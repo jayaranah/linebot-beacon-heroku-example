@@ -1,0 +1,25 @@
+html, body{
+    height:100%;
+    margin:0;
+    padding:0;
+    color:#ffffff;
+}
+
+.redbg {
+  background-color:#941313;
+}
+
+.greenbg {
+  background-color:#13BE19;
+}
+
+.blackbg {
+  background-color:#222222;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Login failed{% endblock %}
+
+{% block styles %}
+{{super()}}
+  <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="vertical-center blackbg" >
+  <div class="container">
+    <p class="text-center h4"><strong>ログイン失敗</strong></p>
+  </div>
+</div>
+{% endblock %}

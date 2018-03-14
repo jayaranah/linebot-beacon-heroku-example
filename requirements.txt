@@ -1,0 +1,9 @@
+line-bot-sdk
+flask
+gunicorn
+pycrypto
+psycopg2-binary
+flask-bootstrap
+flask_wtf
+PyJWT
+pycurl

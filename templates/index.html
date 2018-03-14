@@ -1,0 +1,10 @@
+{% extends "bootstrap/base.html" %}
+
+{% block scripts %}
+{{ super() }}
+<script type="text/javascript">
+  var csrf_token = "{{ data.csrf_token }}"
+  var channel_id = "{{ data.channel_id }}"
+  location.href = "https://access.line.me/oauth2/v2.1/authorize?scope=profile%20openid%20email&prompt=consent&bot_prompt=normal&response_type=code&client_id=" + channel_id + "&redirect_uri=https%3a%2f%2fmtup%2dbeacon%2eherokuapp%2ecom%2flogin_callback&state=" + csrf_token;
+</script>
+{% endblock %}

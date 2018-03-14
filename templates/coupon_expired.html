@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Invalid Coupon{% endblock %}
+
+{% block styles %}
+{{super()}}
+  <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="vertical-center redbg" >
+  <div class="container">
+    <p class="text-center h4"><strong>クーポンが無効です</strong></p>
+  </div>
+</div>
+{% endblock %}
